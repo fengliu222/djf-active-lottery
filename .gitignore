@@ -1,0 +1,7 @@
+
+ 
+webapp/swf/com/adobe/
+webapp/swf/com/greensock/*.txt
+webapp/swf/com/greensock/*.as
+webapp/swf/com/greensock/*/*.as
+!webapp/swf/com/greensock/TweenLite.as

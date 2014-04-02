@@ -1,0 +1,11 @@
+{
+    "server": {
+        "port": "3000",
+        "path": {
+            "view": "./webapp/WEB-INF/view",
+            "mock": "./mock",
+            "public": "./webapp"
+        },
+        "globals": {}
+    }
+}

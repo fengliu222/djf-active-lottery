@@ -13,6 +13,12 @@ module.exports = {
 		/**
 		 * test override in freemarker
 		 */
-		this.render.ftl("portal/index");
+		this.render.ftl("index");
+	},
+	"get /getData":function(req, res){
+		console.log("getData");
+		this.render.json({
+			cur:"进入内圈"
+		});
 	}
 };
