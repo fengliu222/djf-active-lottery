@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 WEBSTART
 ========
 前端项目基础模板
@@ -26,3 +27,7 @@ WEBSTART
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/changyou/webstart/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+=======
+djf-active-lottery
+==================
+>>>>>>> 328ec23cade6bd980cc57f534ad92e7de5dd740e
