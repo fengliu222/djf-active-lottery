@@ -1,8 +1,10 @@
  
-webapp/swf/com/adobe/
-webapp/swf/com/greensock/*.txt
-webapp/swf/com/greensock/*.as
-webapp/swf/com/greensock/*/*.as
-!webapp/swf/com/greensock/TweenLite.as
+frontend/src/swf/com/adobe/
+frontend/src/swf/com/greensock/*.txt
+frontend/src/swf/com/greensock/*.as
+frontend/src/swf/com/greensock/*/*.as
+!frontend/src/swf/com/greensock/TweenLite.as
  
  
+node_modules/
+webapp/

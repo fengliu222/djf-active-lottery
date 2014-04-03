@@ -1,0 +1,888 @@
+.m-detail {
+  color: #7A7979;
+}
+.m-detail .goods-detail {
+  margin-bottom: 20px;
+}
+.m-detail .goods-detail .u-imgbox {
+  float: left;
+  padding: 67px;
+  background-color: #fcfcfc;
+}
+.m-detail .goods-detail input {
+  padding: 2px 4px;
+  height: 14px;
+  margin: 0 5px;
+  border: 1px #CBCBCB solid;
+}
+.m-detail .goods-detail .content {
+  margin-left: 240px;
+  line-height: 1;
+}
+.m-detail .goods-detail .content h3 {
+  padding-bottom: 10px;
+  *padding-bottom: 6px;
+  _padding-bottom: 7px;
+  margin-bottom: 20px;
+  border-bottom: 1px #AEADAD solid;
+}
+.m-detail .goods-detail .content h3 span {
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.m-detail .goods-detail .content p {
+  margin-bottom: 20px;
+}
+.m-detail .goods-detail .content p label {
+  margin-right: 12px;
+}
+.m-detail .goods-detail .content p span.no {
+  text-decoration: none;
+}
+.m-detail .goods-detail .content p.web-price span {
+  font-weight: bold;
+  color: #f90404;
+}
+.m-detail .goods-detail .content p.bind span {
+  font-weight: bold;
+}
+.m-detail .goods-detail .content .buy {
+  margin-left: -10px;
+  padding-left: 10px;
+  border: 1px #d9d8d8 solid;
+  background-color: #F2F2F2;
+}
+.m-detail .goods-detail .content .buy p {
+  margin: 10px 0;
+}
+.m-detail .goods-detail .content .buy p.buy-state {
+  margin-left: 72px;
+}
+.m-detail .goods-detail .content .buy .tip {
+  margin-left: 30px;
+  color: #EC3F3F;
+}
+.m-detail .goods-desc .content {
+  padding-top: 10px;
+  line-height: 24px;
+  text-indent: 2em;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.m-detail-week {
+  color: #7A7979;
+}
+.m-detail-week .goods {
+  margin-bottom: 40px;
+}
+.m-detail-week .goods .u-imgbox {
+  float: left;
+  padding: 34px;
+  background-color: #fcfcfc;
+  margin-top: 36px;
+}
+.m-detail-week .goods .content {
+  margin-left: 240px;
+  line-height: 30px;
+}
+.m-detail-week .goods .content h2 {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px #AEADAD solid;
+}
+.m-detail-week .goods .content .game-price span {
+  margin-right: 3px;
+}
+.m-detail-week .goods .content .web-price span {
+  margin-right: 3px;
+  font-weight: bold;
+  color: #f90404;
+}
+.m-detail-week .goods .content .web-price span.no {
+  text-decoration: none;
+}
+.m-detail-week .goods .content .bind span {
+  font-weight: bold;
+}
+.m-detail-week .goods .content .buy {
+  margin-left: -10px;
+  padding-left: 8px;
+}
+.m-detail-week .goods .content .buy p {
+  margin-top: 15px;
+}
+.m-detail-week .goods .content .buy .tip {
+  margin-left: 30px;
+  color: #EC3F3F;
+}
+.m-detail-week .goods-desc .content {
+  padding-top: 10px;
+  line-height: 24px;
+}
+.m-detail-week .head {
+  background: url("/assets/img/week.png") repeat-x 0 0;
+  padding-left: 240px;
+  margin-bottom: 10px;
+}
+.m-detail-week .head .week-date {
+  line-height: 32px;
+  color: #7a7979;
+  font-size: 14px;
+  font-weight: bold;
+}
+.m-detail .packs-detail {
+  margin-bottom: 20px;
+}
+.m-detail .packs-detail .b-imgbox {
+  float: left;
+  padding: 35px;
+  background-color: #fcfcfc;
+  border: 1px #D9D8D8 solid;
+}
+.m-detail .packs-detail .content {
+  margin-left: 240px;
+  line-height: 1;
+}
+.m-detail .packs-detail .content h3 {
+  padding-bottom: 10px;
+  *padding-bottom: 7px;
+  margin-bottom: 20px;
+  border-bottom: 1px #AEADAD solid;
+}
+.m-detail .packs-detail .content h3 span {
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.m-detail .packs-detail .content p {
+  margin-bottom: 20px;
+}
+.m-detail .packs-detail .content p label {
+  margin-right: 12px;
+}
+.m-detail .packs-detail .content p span.no {
+  text-decoration: none;
+}
+.m-detail .packs-detail .content p.web-price span {
+  font-weight: bold;
+  color: #f90404;
+}
+.m-detail .packs-detail .content .detail {
+  margin-bottom: 20px;
+}
+.m-detail .packs-detail .content .detail label {
+  vertical-align: top;
+  margin-right: 4px;
+}
+.m-detail .packs-detail .content .detail .detail-list {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.m-detail .packs-detail .content .detail .detail-list .list-item {
+  float: left;
+  width: 56px;
+}
+.m-detail .packs-detail .content .detail .detail-list .list-item .img {
+  position: relative;
+  width: 50px;
+  height: 47px;
+  margin-left: 8px;
+  background: url("/assets/img/activity/packs_bg02.png") no-repeat 0 0;
+}
+.m-detail .packs-detail .content .detail .detail-list .list-item .img i {
+  font-family: "Arial";
+  font-weight: bold;
+  width: 14px;
+  height: 12px;
+  line-height: 14px;
+  position: absolute;
+  left: 22px;
+  color: #FFFFFF;
+}
+.m-detail .packs-detail .content .detail .detail-list .list-item .img a {
+  display: inline-block;
+  width: 30px;
+  margin-top: 7px;
+  padding: 5px;
+}
+.m-detail .packs-detail .content .detail .detail-list .list-item h6 {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 8px 3px 0;
+  color: #666666;
+  text-align: center;
+}
+.m-detail .packs-detail .content .detail .detail-list .list-item h6 .name {
+  display: block;
+  width: 52px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-detail .packs-detail .content .detail .detail-list .list-item a {
+  cursor: default;
+  text-decoration: none;
+}
+.m-detail .packs-detail .content .buy {
+  margin-left: -10px;
+  padding-left: 10px;
+  border: 1px #d9d8d8 solid;
+  background-color: #F2F2F2;
+}
+.m-detail .packs-detail .content .buy p {
+  margin: 10px 0;
+}
+.m-detail .packs-detail .content .buy p.buy-state {
+  margin-left: 72px;
+}
+.m-detail .packs-detail .content .buy .tip {
+  margin-left: 30px;
+  color: #EC3F3F;
+}
+.m-detail .packs-detail .content .buy input {
+  padding: 2px 4px;
+  height: 14px;
+  margin: 0 5px;
+  border: 1px #cbcbcb solid;
+}
+.m-detail .packs-desc .content {
+  padding-top: 10px;
+  line-height: 24px;
+  text-indent: 2em;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.m-buy {
+  margin-bottom: 20px;
+  /*商品*/
+
+  /*礼包*/
+
+  /*竞拍*/
+
+  /*订单*/
+
+}
+.m-buy .goods em,
+.m-buy .packs em,
+.m-buy .upauct em,
+.m-buy .orders em {
+  margin-right: 3px;
+  color: #f90404;
+}
+.m-buy .goods .u-title1,
+.m-buy .packs .u-title1,
+.m-buy .upauct .u-title1,
+.m-buy .orders .u-title1 {
+  margin-bottom: 15px;
+}
+.m-buy .goods .content,
+.m-buy .packs .content,
+.m-buy .upauct .content,
+.m-buy .orders .content {
+  margin-left: 230px;
+  line-height: 32px;
+}
+.m-buy .goods .content p,
+.m-buy .packs .content p,
+.m-buy .upauct .content p,
+.m-buy .orders .content p {
+  min-height: 40px;
+  height: auto !important;
+  _height: 40px;
+  overflow: visible;
+}
+.m-buy .goods .content label,
+.m-buy .packs .content label,
+.m-buy .upauct .content label,
+.m-buy .orders .content label {
+  display: inline-block;
+  margin-right: 10px;
+  width: 100px;
+  text-align: right;
+}
+.m-buy .goods .u-imgbox {
+  padding: 3px;
+  background: url("/assets/img/goods-bg.png") no-repeat 0 -165px;
+}
+.m-buy .goods .props-name label {
+  float: left;
+  margin-right: 14px;
+  *margin-right: 15px;
+  _margin-right: 14px;
+}
+.m-buy .goods .props-name span {
+  float: left;
+  display: block;
+  width: 600px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.m-buy .goods .web-price span {
+  font-weight: bold;
+  color: #f90404;
+}
+.m-buy .goods .bind span {
+  font-weight: bold;
+}
+.m-buy .goods .receive span {
+  color: #f90404;
+}
+.m-buy .packs .u-imgbox {
+  padding: 3px;
+  background: url("/assets/img/goods-bg.png") no-repeat 0 -165px;
+}
+.m-buy .packs .packs-name label {
+  float: left;
+  margin-right: 14px;
+  *margin-right: 15px;
+  _margin-right: 14px;
+}
+.m-buy .packs .packs-name span {
+  float: left;
+  display: block;
+  width: 600px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.m-buy .packs .web-price .have {
+  font-weight: bold;
+  color: #f90404;
+}
+.m-buy .packs .detail {
+  min-height: 32px;
+  height: auto!important;
+  heigth: 32px;
+  overflow: visible;
+  line-height: 32px;
+}
+.m-buy .packs .detail label {
+  vertical-align: top;
+}
+.m-buy .packs .detail .detail-list {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.m-buy .packs .detail .detail-list .list-item {
+  float: left;
+  width: 56px;
+}
+.m-buy .packs .detail .detail-list .list-item .img {
+  position: relative;
+  width: 50px;
+  height: 47px;
+  margin-left: 8px;
+  background: url("/assets/img/activity/packs_bg02.png") no-repeat 0 0;
+}
+.m-buy .packs .detail .detail-list .list-item .img i {
+  font-family: "Arial";
+  font-weight: bold;
+  width: 14px;
+  height: 12px;
+  line-height: 14px;
+  position: absolute;
+  left: 22px;
+  color: #FFFFFF;
+}
+.m-buy .packs .detail .detail-list .list-item .img a {
+  display: inline-block;
+  width: 30px;
+  margin-top: 7px;
+  padding: 5px;
+}
+.m-buy .packs .detail .detail-list .list-item h6 {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 8px 3px 0;
+  color: #666666;
+  text-align: center;
+}
+.m-buy .packs .detail .detail-list .list-item h6 .name {
+  display: block;
+  width: 52px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-buy .packs .detail .detail-list .list-item a {
+  cursor: default;
+  text-decoration: none;
+}
+.m-buy .upauct .u-imgbox {
+  padding: 3px;
+  background: url("/assets/img/goods-bg.png") no-repeat 0 -165px;
+}
+.m-buy .upauct .props-name label {
+  float: left;
+  margin-right: 14px;
+  *margin-right: 15px;
+  _margin-right: 14px;
+}
+.m-buy .upauct .props-name span {
+  float: left;
+  display: block;
+  width: 600px;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.m-buy .upauct .web-price .have {
+  font-weight: bold;
+  color: #f90404;
+}
+.m-buy .orders .operation input {
+  padding: 3px;
+  height: 14px;
+  margin: 0 5px;
+  border: 1px #CBCBCB solid;
+}
+.m-buy .orders .operation .choose {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 155px;
+  height: 24px;
+  line-height: 18px;
+  margin-right: 5px;
+  padding: 0 5px;
+  border: 1px solid #CBCBCB;
+  vertical-align: middle;
+}
+.m-buy .orders .operation .choose input {
+  width: 135px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.m-buy .orders .operation .tip {
+  color: #EC3F3F;
+}
+.m-buy .orders .operation .buy .u-btn {
+  margin: 20px 0 0 110px;
+}
+.m-filter-1 {
+  padding: 15px;
+  background-color: #F4F4F4;
+  border: 1px #F0F0F0 solid;
+  margin-bottom: 1px;
+}
+.m-filter-1 label {
+  margin-right: 3px;
+}
+.m-filter-1 input {
+  padding: 3px;
+  height: 14px;
+  margin: 0 5px;
+  border: 1px #CBCBCB solid;
+}
+.m-filter-1 img {
+  cursor: pointer;
+}
+.m-filter-1 .datepicker {
+  cursor: pointer;
+}
+.m-orders {
+  min-height: 500px;
+  height: auto !important;
+  _height: 500px;
+}
+.m-orders .row {
+  display: block;
+  padding-left: 3px;
+}
+.m-orders .row em {
+  font-weight: normal;
+  display: inline-block;
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-active-list .content ul .item {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px #d9d8d8 dashed;
+  line-height: 22px;
+}
+.m-active-list .content ul .item .u-imgbox {
+  float: left;
+}
+.m-active-list .content ul .item .u-imgbox a {
+  border: 1px #D3D1D1 solid;
+  display: block;
+}
+.m-active-list .content ul .item .info {
+  position: relative;
+  margin-left: 280px;
+  height: 135px;
+}
+.m-active-list .content ul .item .info .info-bd {
+  float: left;
+  width: 240px;
+}
+.m-active-list .content ul .item .info .info-bd .title {
+  font-size: 14px;
+}
+.m-active-list .content ul .item .info .info-bd .desc {
+  word-break: break-all;
+  word-wrap: break-word;
+  height: 66px;
+  overflow: hidden;
+}
+.m-active-list .content ul .item .info .info-bd .starttime,
+.m-active-list .content ul .item .info .info-bd .endtime {
+  position: absolute;
+  left: 0;
+  width: 350px;
+}
+.m-active-list .content ul .item .info .info-bd .starttime {
+  bottom: 22px;
+}
+.m-active-list .content ul .item .info .info-bd .endtime {
+  bottom: -1px;
+  _bottom: 0;
+}
+.m-active-list .content ul .item .info .info-bd .endtime .remaintime {
+  margin-left: 25px;
+}
+.m-active-list .content ul .item .info .info-bd .endtime .remaintime i {
+  display: inline-block;
+  background-color: #FA6F6F;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 3px;
+  padding: 0 5px;
+  color: white;
+  line-height: 18px;
+  vertical-align: text-bottom;
+}
+.m-active-list .content ul .item .info .info-bd .endtime .end {
+  display: inline-block;
+  background-color: #716E6E;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 30px;
+  padding: 0 5px;
+  color: white;
+  line-height: 18px;
+  vertical-align: text-bottom;
+}
+.m-active-list .content ul .item .info .info-opt {
+  float: left;
+  width: 107px;
+  margin: 40px 0 0 10px;
+}
+.m-active-list .content ul .item .info .info-opt a {
+  display: block;
+  width: 107px;
+  height: 30px;
+  background: url("/assets/img/activity/active_btn01.png") 0 -35px no-repeat;
+}
+.m-active-list .content ul .item .info .info-opt a.end {
+  cursor: default;
+  background-position: 0 -70px;
+}
+.m-active-list .content ul .item .info .info-opt .join {
+  display: block;
+  text-align: center;
+}
+.m-active-list .content ul .item .info .info-opt .join em {
+  color: #f90404;
+  vertical-align: top;
+}
+.m-active-list .content ul .item-hover {
+  background-color: #F6F5F5;
+}
+.m-active-list .content ul .item-hover .info .info-opt .btn-active {
+  background-position: 0 0;
+}
+.m-help {
+  border: 1px #d9d8d8 solid;
+  min-height: 982px;
+  _height: 982px;
+}
+.m-help .title {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  background: url("/assets/img/m-help-tt.png") repeat-x 0 0;
+  border-bottom: 1px #d9d8d8 solid;
+}
+.m-help .content {
+  padding: 20px;
+  line-height: 26px;
+}
+.m-help .content .top {
+  margin: 0 0 10px 25px;
+}
+.m-help .content h3 label {
+  float: left;
+  background: url("/assets/img/help-step.png") repeat-x 0 0;
+  width: 20px;
+  height: 36px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+.m-help .content h3 span {
+  float: left;
+  margin: 10px 0 0 5px;
+  background: url("/assets/img/help-tt.png") repeat-x 0 0;
+  width: 82px;
+  height: 20px;
+  line-height: 20px;
+  padding-left: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFE2E2;
+}
+.m-help .content p {
+  text-indent: 2em;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.m-help .content p img {
+  margin: 0 auto;
+}
+.m-help .content p strong {
+  color: #909090;
+  font-size: 14px;
+}
+.m-help .content p.tt {
+  text-indent: 0;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px #D7D7D7 solid;
+}
+.m-help .content p.f-mb50 {
+  margin-bottom: 50px;
+}
+.m-help .f-ml120 {
+  margin-left: 120px;
+}
+.m-article {
+  line-height: 24px;
+}
+.m-article .head {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px #d9d8d8 dashed;
+}
+.m-article .content {
+  padding-top: 20px;
+}
+.m-article .content a {
+  color: #0885dd;
+}
+.m-article .content section {
+  margin-bottom: 20px;
+  width: 650px;
+  overflow: hidden;
+}
+.m-article .content section img {
+  max-width: 650px;
+}
+.m-article .content section p label {
+  font-weight: bold;
+}
+.m-article .content section p.time {
+  font-weight: bold;
+}
+.m-article .content section ul.goods-list li {
+  text-indent: 4em;
+}
+.m-article .content section ul.goods-list li span {
+  margin-right: 8px;
+}
+.m-article .content .author {
+  margin-top: 50px;
+}
+.m-article-list ul li {
+  line-height: 32px;
+  border-bottom: 1px #C1C0C0 dashed;
+}
+.m-article-list ul li time {
+  float: right;
+}
+.m-article-list ul li a {
+  display: inline-block;
+  padding-left: 25px;
+  background: url("/assets/img/notice-list.png") no-repeat left center;
+}
+.m-filter.packs {
+  margin-bottom: 0;
+}
+/*礼包列表*/
+.m-packs-list {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.m-packs-list .packs-list .packs-item {
+  padding: 20px 10px;
+  border-bottom: 1px #d9d8d8 dashed;
+}
+.m-packs-list .packs-list .packs-item .buy {
+  float: right;
+  padding-top: 29px;
+}
+.m-packs-list .packs-list .packs-item .buy .btn-packs {
+  display: block;
+  width: 90px;
+  height: 30px;
+  background: url("/assets/img/activity/packs_btn01.png") 0 -35px no-repeat;
+}
+.m-packs-list .packs-list .packs-item .detail-list {
+  float: right;
+  padding: 18px 14px 0 0;
+  width: 280px;
+}
+.m-packs-list .packs-list .packs-item .detail-list .list-item {
+  float: left;
+  width: 56px;
+}
+.m-packs-list .packs-list .packs-item .detail-list .list-item .img {
+  position: relative;
+  width: 50px;
+  height: 47px;
+  margin-left: 8px;
+  background: url("/assets/img/activity/packs_bg02.png") no-repeat 0 0;
+}
+.m-packs-list .packs-list .packs-item .detail-list .list-item .img i {
+  font-family: "Arial";
+  font-weight: bold;
+  width: 14px;
+  height: 12px;
+  line-height: 14px;
+  position: absolute;
+  left: 22px;
+  top: -1px;
+  color: #FFFFFF;
+}
+.m-packs-list .packs-list .packs-item .detail-list .list-item .img a {
+  display: inline-block;
+  width: 30px;
+  margin-top: 7px;
+  padding: 5px;
+}
+.m-packs-list .packs-list .packs-item .detail-list .list-item h6 {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 11pt;
+  padding: 6px 3px 0;
+  color: #666666;
+  text-align: center;
+}
+.m-packs-list .packs-list .packs-item .detail-list .list-item h6 .name {
+  display: block;
+  width: 52px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-packs-list .packs-list .packs-item .detail-list .list-item a {
+  cursor: default;
+  text-decoration: none;
+}
+.m-packs-list .packs-list .packs-item .imgbox {
+  float: left;
+  width: 85px;
+  height: 85px;
+  padding-right: 13px;
+  _padding-right: 10px;
+  background: url("/assets/img/activity/packs_bg01.png") no-repeat 0 0;
+}
+.m-packs-list .packs-list .packs-item .imgbox a {
+  display: inline-block;
+  padding: 13px;
+}
+.m-packs-list .packs-list .packs-item .describ {
+  float: left;
+  width: 140px;
+  color: #585656;
+  line-height: 1;
+}
+.m-packs-list .packs-list .packs-item .describ h3 {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  *line-height: 16px;
+  margin-bottom: 14px;
+  _margin-bottom: 13px;
+}
+.m-packs-list .packs-list .packs-item .describ h3 .packs-name {
+  display: block;
+  width: 141px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-packs-list .packs-list .packs-item .describ p {
+  margin-bottom: 13px;
+}
+.m-packs-list .packs-list .packs-item .describ p.game-price {
+  color: #989696;
+}
+.m-packs-list .packs-list .packs-item .describ p.web-price {
+  margin: 0;
+}
+.m-packs-list .packs-list .packs-item .describ p.web-price span {
+  display: inline-block;
+  font-weight: bold;
+  color: #f90404;
+  width: 95px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-packs-list .packs-list .packs-item .describ p label {
+  margin-right: 3px;
+}
+.m-packs-list .packs-list .packs-item-hover {
+  background-color: #F6F5F5;
+}
+.m-packs-list .packs-list .packs-item-hover .imgbox {
+  background-position: 0 -85px;
+}
+.m-packs-list .packs-list .packs-item-hover .buy .btn-packs {
+  background-position: 0 0;
+}
+.m-packs-list .no-data {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.m-nodata {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.m-error {
+  margin: 0 auto;
+  width: 880px;
+  padding-top: 120px;
+}
+.m-error .img {
+  border-bottom: 2px #969696 solid;
+  text-align: center;
+}
+.m-error .txt {
+  text-align: right;
+  font-family: 'Microsoft Yahei';
+  font-size: 32px;
+  color: #ACABAB;
+}
