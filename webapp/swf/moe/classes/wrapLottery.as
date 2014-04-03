@@ -14,7 +14,9 @@ package moe.classes{
 	import fl.motion.MatrixTransformer;
 	import com.greensock.TweenLite;
 	import moe.Interface.Turntable;
-
+	import com.demonsters.debugger.MonsterDebugger;
+	import flash.text.*;
+	import moe.classes.util;
 	public class wrapLottery implements Turntable{
 		private var curGoods:String;
 		private var curObj:MovieClip;
@@ -41,9 +43,21 @@ package moe.classes{
 		public function updateData(type:Number,id:Number):void {}
 		
 		public function updateAllData(goods:Array):void {
-			trace(123);
-			ExternalInterface.call("jslog", goods);
+			var fmt:TextFormat = new TextFormat();
+			fmt.align = TextFormatAlign.CENTER;
+			fmt.color = 0xffcc00;
+			fmt.size = 12;
+
+			for(var i:Number=0; i < goods.length; i++){
+				MonsterDebugger.trace(this,typeof this.curObj["goods"+(i+1)].goodsname);
+				util.createGoodsUI(goods[i].name,goods[i].src,function(nameImg,iconImg){
+					this.curObj["goods"+(i+1)].addChild(nameImg);
+					this.curObj["goods"+(i+1)].addChild(iconImg);
+				})
+				
+			}
 			 
 		}
+			
 	}
 }

@@ -6,6 +6,39 @@
 	<link rel="stylesheet" href="../css/base/base.css">
 	<link rel="stylesheet" href="../css/base/page.css">
 	<link rel="stylesheet" href="../css/lottery.css">
+	<script>
+		var templateData = {
+				'wrap': [{
+					name: '哈哈哈1',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				}, {
+					name: '哈哈哈2',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				}, {
+					name: '哈哈哈3',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				}, {
+					name: '哈哈哈4',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				}, {
+					name: '哈哈哈5',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				}, {
+					name: '哈哈哈6',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				},{
+					name: '哈哈哈7',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				},{
+					name: '哈哈哈8',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				}],
+				'inner': [{
+					name: 'goods1',
+					src: 'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'
+				}]
+			};
+	</script>
 </head>
 <body>
 	<div class="g-bd f-cb">
@@ -18,16 +51,16 @@
 					
 					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="538" height="534">
 					  <param name="quality" value="high" />
-					  <param name="allowScriptAccess" value="sameDomain" />
-					  <param name="movie" value="../swf/7转盘3.swf?defaultData=[{name:'goods',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]" />
-					  <param name="FlashVars" value="defaultData=[{name:'goods',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]" />
-					  <embed src="../swf/7转盘3.swf?defaultData=[{name:'goods1',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]" 
+					  <param name="mode" value="transparent" />
+					  <param name="allowScriptAccess" value="always" />
+					  <param name="movie" value="../swf/7转盘3.swf" />
+				
+					  <embed src="../swf/7转盘3.swf" 
 					  		width="538" 
 					  		height="534" 
 					  		name="lottery" 
 					  		quality="high" 
-					  		allowScriptAccess="sameDomain"
-					  		FlashVas="defaultData=[{name:'goods',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]"
+					  		allowScriptAccess="always"
 					  		pluginspage="http://www.macromedia.com/go/getflashplayer" 
 					  		type="application/x-shockwave-flash" 
 					  		  />
@@ -91,7 +124,8 @@
 	</div>
 	<script src='../js/modules/jquery/jquery-1.9.1.js'></script>
 	<script>
-		function changeTitle(type){
+		function getData(type){
+
 			$.get("./getData",{type:type},function(data){
 				lottery.ajaxComplete(data);
 			})
@@ -99,6 +133,12 @@
 
 		function jslog(data){
 			console.log(data);
+		}
+
+
+		function getTemplateData(){
+			return templateData;
+			// lottery.templateDataInit(defaultData.slice(0));
 		}
 	</script>
 </body>

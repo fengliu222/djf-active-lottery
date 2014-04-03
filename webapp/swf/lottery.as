@@ -1,4 +1,4 @@
-﻿package  {
+package  {
 	
 	import flash.display.MovieClip;
 	import flash.events.Event;    
@@ -12,25 +12,38 @@
 	import flash.external.ExternalInterface;
 	import moe.classes.wrapLottery;
 	import moe.classes.innerLottery;
+	import com.demonsters.debugger.MonsterDebugger;
+	import flash.system.Security; 
 
 	public class lottery extends MovieClip {
 		private var lotteryType:Number = 1;//1.外圈 2.内圈
 		private var wrapCtrl:wrapLottery = null;
 		private var curItem:String;
-		private var dataTemp:Array;
+		private var wrapDataTemp:Object;
 		/**
 		 * 初始化
 		 * @return [description]
 		 */
 		public function lottery() {
+
+			//debug
+			MonsterDebugger.initialize(this);
+			Security.allowDomain("*");
+			Security.allowInsecureDomain("*");
+            //绑定鼠标事件
 			lotteryFilm.stop();
 			lotteryFilm.lotteryBtn.addEventListener(MouseEvent.CLICK,btnHandle);
+
+			//创建转盘实例
 			wrapCtrl = new wrapLottery(lotteryFilm.ltWrap);
-			dataTemp = stage.loaderInfo.parameters.defaultData;
-			wrapCtrl.updateAllData(dataTemp);
-			 
+
+			//将模板变量获取并传入转盘初始化方法中
+			wrapDataTemp = ExternalInterface.call("getTemplateData");
+			MonsterDebugger.trace(this,wrapDataTemp);
+			wrapCtrl.updateAllData(wrapDataTemp.wrap);
 		}
 		
+		 
 		/**
 		 * 事件绑定回调
 		 * @param  e [description]
