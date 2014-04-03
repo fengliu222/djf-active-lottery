@@ -16,7 +16,7 @@
 <#global SITE_STATE>
 	<!-- Site Stat -->
 	<div style="display:none;">
-	<script src="http://s4.cnzz.com/stat.php?id=4802554&web_id=4802554" language="JavaScript"></script>
+		<!-- 数据统计 -->
 	</div>
 </#global>
 

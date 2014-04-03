@@ -15,24 +15,24 @@
 			<div class="lot-left">
 				<!-- 抽奖Flash -->
 				<div class="lot-flash-wrap">
-					
+
 					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="538" height="534">
 					  <param name="quality" value="high" />
 					  <param name="allowScriptAccess" value="sameDomain" />
 					  <param name="movie" value="../swf/7转盘3.swf?defaultData=[{name:'goods',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]" />
 					  <param name="FlashVars" value="defaultData=[{name:'goods',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]" />
-					  <embed src="../swf/7转盘3.swf?defaultData=[{name:'goods1',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]" 
-					  		width="538" 
-					  		height="534" 
-					  		name="lottery" 
-					  		quality="high" 
+					  <embed src="../swf/7转盘3.swf?defaultData=[{name:'goods1',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]"
+					  		width="538"
+					  		height="534"
+					  		name="lottery"
+					  		quality="high"
 					  		allowScriptAccess="sameDomain"
 					  		FlashVas="defaultData=[{name:'goods',src:'http://tp3.sinaimg.cn/1449299350/180/5596620774/1'}]"
-					  		pluginspage="http://www.macromedia.com/go/getflashplayer" 
-					  		type="application/x-shockwave-flash" 
+					  		pluginspage="http://www.macromedia.com/go/getflashplayer"
+					  		type="application/x-shockwave-flash"
 					  		  />
 					</object>
-  
+
 				</div>
 				<!-- 奖品格子 -->
 				<div class="log-bag">
@@ -50,7 +50,6 @@
 						斗气值进阶
 					</div>
 					<div class="log-power-content">
-						
 					</div>
 				</div>
 				<!-- 中奖信息轮播 -->
@@ -89,7 +88,7 @@
 			</div>
 		</div>
 	</div>
-	<script src='../js/modules/jquery/jquery-1.9.1.js'></script>
+	<script src='../lib/jquery/jquery-1.9.1.js'></script>
 	<script>
 		function changeTitle(type){
 			$.get("./getData",{type:type},function(data){

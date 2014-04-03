@@ -6,3 +6,5 @@ webapp/swf/com/greensock/*/*.as
 !webapp/swf/com/greensock/TweenLite.as
  
  
+node_modules/
+webapp/
