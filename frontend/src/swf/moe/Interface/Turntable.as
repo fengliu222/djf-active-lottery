@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Description: Turntable interface,
  * Author: Moe;
  */
@@ -9,7 +9,7 @@ package moe.Interface{
 		 * 用户点击后进入到此方法，开始转盘旋转逻辑。
 		 * @return [description]
 		 */
-		function start(curItem:String):void;
+		function start(rotation:Number):void;
 
 		/**
 		 * 动画开始前逻辑

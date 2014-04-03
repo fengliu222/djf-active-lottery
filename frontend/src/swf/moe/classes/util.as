@@ -29,5 +29,12 @@
 			 
 			callBack(goodsNameImg);
 		}
+		public static function objectLength(myObject:Object):Number {
+			 var cnt:Number=0;
+
+			 for (var s:String in myObject) cnt++;
+
+			 return cnt;
+		}
 	}
 }

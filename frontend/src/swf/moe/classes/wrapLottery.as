@@ -19,14 +19,17 @@ package moe.classes{
 	import moe.classes.util;
 	import moe.classes.ExBitmap;
 	import moe.classes.ImageLoader;
+	
 	public class wrapLottery implements Turntable{
 		private var curGoods:String;
 		private var curObj:MovieClip;
+		public var afterCallback:Function;
 		public function wrapLottery(curObj:MovieClip):void{
 			this.curObj = curObj;
 		}
-		public function start(curItem:String):void {
+		public function start(rotation:Number):void {
 			
+			rotateAnimation(rotation);
 		}
 		public function beforeAnimation():void {}
 
@@ -40,22 +43,29 @@ package moe.classes{
 
 		}
 
-		public function afterAnimation():void{}
+		public function afterAnimation():void{
+			 afterCallback();
+		}
 
-		public function updateData(type:Number,id:Number):void {}
+		public function updateData(type:Number,id:Number):void {
+			
+		}
 		
 		public function updateAllData(goods:Array):void {
 			 
 			for(var i:Number=0; i < goods.length; i++){
 				
+				//文字属性
 				var tf:TextFormat = new TextFormat();
                 tf.color = 0x0066aa;
                 tf.size = 16;
                 tf.bold = true;
 				
+				//生成名字元件
 				var goodsNameImg:Bitmap = ExBitmap.getTextBitmap(goods[i].name,tf);
 				this.curObj["goods"+(i+1)].addChild(goodsNameImg);
 				
+				//生成ICON元件
 				var img =new Loader();
 				img.load(new URLRequest(goods[i].src));
 				img.y = 35;

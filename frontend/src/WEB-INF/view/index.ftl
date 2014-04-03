@@ -15,7 +15,7 @@
 					name: '哈哈哈2',
 					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
 				}, {
-					name: '哈哈哈3',
+					name: '进入内圈',
 					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
 				}, {
 					name: '哈哈哈4',
@@ -49,7 +49,7 @@
 				<!-- 抽奖Flash -->
 				<div class="lot-flash-wrap">
 
-					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="538" height="534">
+					<object id="lotteryFlash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="538" height="534">
 					  <param name="quality" value="high" />
 					  <param name="mode" value="transparent" />
 					  <param name="allowScriptAccess" value="always" />
@@ -60,7 +60,6 @@
 					  		height="534" 
 					  		name="lottery" 
 					  		quality="high" 
-					  		allowScriptAccess="always"
 					  		pluginspage="http://www.macromedia.com/go/getflashplayer" 
 					  		type="application/x-shockwave-flash"/>
 					</object>
@@ -125,6 +124,7 @@
 		function getData(type){
 
 			$.get("./getData",{type:type},function(data){
+			 
 				lottery.ajaxComplete(data);
 			})
 		}
