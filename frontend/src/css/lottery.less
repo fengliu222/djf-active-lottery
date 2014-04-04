@@ -1,6 +1,26 @@
+@import "./base/cssbase.mixin.less";
+
+.lottery-wrap {
+	width: 100%;
+}
+
 .lot-main{
+	width: 1020px;
+	background: url('@{imgPath}/bg/bg_wrap_lotmain.jpg');
+
 	.lot-left,.lot-right{
 		width: 50%;
 		float: left;
 	}
+}
+
+/*====================================*/
+/* 占位 style */
+
+body {
+	background: url('@{imgPath}/bg/bg_wrap_lottery.jpg') center top no-repeat;
+}
+
+.stub-header {
+	height: 42px;
 }
