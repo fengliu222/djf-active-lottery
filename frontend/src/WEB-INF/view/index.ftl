@@ -59,20 +59,23 @@
 
 					<object id="lotteryFlash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="538" height="534">
 					  <param name="quality" value="high" />
-					  <param name="mode" value="transparent" />
+					  <param name="wmode" value="transparent" />
 					  <param name="allowScriptAccess" value="always" />
-					  <param name="movie" value="../swf/7转盘3.swf" />
+					  <param name="movie" value="../swf/lottery.swf" />
 				
-					  <embed src="../swf/7转盘3.swf" 
+					  <embed src="../swf/lottery.swf" 
 					  		width="538" 
 					  		height="534" 
 					  		name="lottery" 
 					  		quality="high" 
+					  		wmode="transparent"
 					  		pluginspage="http://www.macromedia.com/go/getflashplayer" 
 					  		type="application/x-shockwave-flash"/>
 					</object>
 				</div>
-
+				<div id="startAnimation">
+					开始
+				</div>
 				<!-- 斗气值进阶，中奖名单等 -->
 				<div class="lot-box lot-right">
 				</div>
@@ -181,6 +184,10 @@
 			return templateData;
 			// lottery.templateDataInit(defaultData.slice(0));
 		}
+
+		$("#startAnimation").bind("click",function(){
+			lottery.startAnimation();
+		})
 	</script>
 </body>
 

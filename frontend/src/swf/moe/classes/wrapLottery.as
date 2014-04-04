@@ -39,7 +39,7 @@ package moe.classes{
 			this.curObj.rotation = 0;
 			
 			//开始旋转动画，使用TweenLite类
-			TweenLite.to(this.curObj,Number(4),{rotation:360 * 8 + deg,onComplete:afterAnimation});
+			TweenLite.to(this.curObj,Number(4),{rotation:360 * 3 + deg,onComplete:afterAnimation});
 
 		}
 
@@ -56,20 +56,20 @@ package moe.classes{
 			for(var i:Number=0; i < goods.length; i++){
 				
 				//文字属性
-				var tf:TextFormat = new TextFormat();
-                tf.color = 0x0066aa;
-                tf.size = 16;
-                tf.bold = true;
+				//var tf:TextFormat = new TextFormat();
+                //tf.color = 0x0066aa;
+                //tf.size = 16;
+                //tf.bold = true;
 				
 				//生成名字元件
-				var goodsNameImg:Bitmap = ExBitmap.getTextBitmap(goods[i].name,tf);
-				this.curObj["goods"+(i+1)].addChild(goodsNameImg);
+				//var goodsNameImg:Bitmap = ExBitmap.getTextBitmap(goods[i].name,tf);
+				//this.curObj["wrapGoods"+(i+1)].addChild(goodsNameImg);
 				
 				//生成ICON元件
 				var img =new Loader();
 				img.load(new URLRequest(goods[i].src));
 				img.y = 35;
-				this.curObj["goods"+(i+1)].addChild(img)
+				this.curObj["wrapGoods"+(i+1)].addChild(img)
 				
 				
 			}

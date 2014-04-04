@@ -36,11 +36,13 @@
             flash.system.Security.allowInsecureDomain("*");
 			 
             //绑定鼠标事件
-			lotteryFilm.stop();
-			lotteryFilm.lotteryBtn.addEventListener(MouseEvent.CLICK,btnHandle);
-
+			//lotteryFilm.stop();
+			//lotteryFilm.lotteryBtn.addEventListener(MouseEvent.CLICK,btnHandle);
+			ExternalInterface.addCallback("startAnimation",function():void{
+				  btnHandle();
+			})
 			//创建转盘实例
-			wrapCtrl = new wrapLottery(lotteryFilm.ltWrap);
+			wrapCtrl = new wrapLottery(wrapLight.wrapLightPanel);
 
 			//将模板变量获取并传入转盘初始化方法中
 			var wrapDataTemp:Object = ExternalInterface.call("getTemplateData");
@@ -60,12 +62,12 @@
 		private function dataInit(dataObj:Object):void{
 			for(var i:Number = 0; i<dataObj.wrap.length; i++){
 				var vbIndex = i + 1;
-				wrapDataObj["goods"+vbIndex] = dataObj.wrap[i];
+				wrapDataObj["wrapGoods"+vbIndex] = dataObj.wrap[i];
 			}
 			
 			for(var k:Number = 0; k<dataObj.inner.length; k++){
 				var ivbIndex = k + 1
-				 innerDataObj["goods"+ivbIndex] = dataObj.inner[k];
+				 innerDataObj["innerGoods"+ivbIndex] = dataObj.inner[k];
 			}
 		}
 		
@@ -74,7 +76,7 @@
 		 * @param  e [description]
 		 * @return   [description]
 		 */
-		private function btnHandle(e:MouseEvent):void{
+		private function btnHandle():void{
 
 			//从服务器端拿数据
 			getPrizeData(lotteryType,function(curItem:String):void{
@@ -83,6 +85,8 @@
 					//外圈抽奖
 					var rotation:Number = calRotation(curItem);
 					wrapCtrl.start(rotation);  
+					
+					//进入内圈逻辑
 					if(curItem == "进入内圈"){
 						lotteryType = 2;
 						wrapCtrl.afterCallback = function():void{
@@ -143,7 +147,7 @@
 		 * @return      [description]
 		 */
 		private function changeArrow(type:Number):void{
-			var arrow = lotteryFilm.ltArrow;
+			var arrow = arrow;
 			if(type == 1){
 				TweenLite.to(arrow,Number(2),{scaleY :1});
 			}else{
