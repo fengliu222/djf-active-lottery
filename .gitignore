@@ -10,3 +10,4 @@ node_modules/
 webapp/
 frontend/src/image/bg/bg_wrap_lotmain.jpg
 frontend/src/image/bg/bg_wrap_lottery.jpg
+frontend/src/image/tmp/
