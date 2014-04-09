@@ -16,23 +16,23 @@
 
 .btn {
 	position: relative;
-	height: 30px;
+	height: 32px;
 	line-height: 28px;
-	background: url('@{imgPath}/bg/icons.png') no-repeat 0 -24px;
+	background: url('@{imgPath}/bg/icons.png') no-repeat 0 -23px;
 	font-size: 13px;
 	color: #313c3e;
 	text-shadow: 0 1px 2px rgba(255, 255, 255, .25);
-	// text-indent: 10px;
 	.btn-right {
-		// float: right;
 		position: absolute;
-		// *position: relative;
 		right: 0;
 		top: 0;
 		width: 10px;
-		height: 30px;
-		background: url('@{imgPath}/bg/icons.png') no-repeat -100px -24px;
+		height: 31px;
+		background: url('@{imgPath}/bg/icons.png') no-repeat -101px -23px;
 	}
+}
+.btn:hover {
+	text-decoration: none;
 }
 .btn-back {
 	float: right;
@@ -43,6 +43,13 @@
 .btn-power {
 	float: right;
 	padding: 0 10px;
+}
+.btn-server {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 0 15px;
+	margin-top: 20px;
 }
 /*==========================================*/
 .lottery-wrap {
@@ -95,10 +102,58 @@
 		// 侧边栏
 		.side-server {
 			position: absolute;
-			right: -30px;
 			top: 0;
-			width: 30px; height: 155px;
-			background: green;
+			right: -172px;
+			width: 170px;
+			height: 160px;
+
+			border: 1px solid #729497;
+
+			.server-title {
+				float: left;
+				padding: 10px 8px;
+
+				width: 15px;
+				line-height: 14px;
+
+				background-color: #4a5f61;
+				background: rgba(74, 95, 97, .8);
+
+				text-shadow: 0px 1px 2px #3e5456;
+				font-size: 13px;
+				font-family: 'Microsoft Yahei';
+				color: #fff;
+
+				word-break: break-all;
+				writing-mode:tb-rl;
+			}
+			.server-box {
+				margin-left: 30px;
+				height: 140px;
+				text-align: center;
+				background: rgba(255, 255, 255, .5);
+				padding-top: 20px;
+				select {
+					width: 112px;
+					height: 27px;
+					margin-top: 10px;
+					background: #ccc;
+				}
+				.select-icons {
+					position: absolute;
+					width: 18px;
+					height: 18px;
+					background: url('@{imgPath}/bg/icons.png') no-repeat 0 -92px;
+				}
+				.pos-area {
+					top: 35px;
+					right: 18px;
+				}
+				.pos-server {
+					top: 72px;
+					right: 18px;
+				}
+			}
 		}
 		.side-btn {
 			position: absolute;
@@ -129,7 +184,7 @@
 				}
 			}
 			&.btn-down {
-				top: 170px;
+				top: 175px;
 				.icon {
 					background-position: -31px 0;
 				}
