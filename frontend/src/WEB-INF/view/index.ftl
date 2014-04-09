@@ -190,8 +190,18 @@
 				</div>
 
 
-				<div class="side-btn btn-down"> 活动介绍 </div>
-				<div class="side-btn btn-up"> 返回顶部 </div>
+
+
+				<!-- 侧边导航 -->
+				<div class="side-server">
+					<div class="server-title">我的服务器..江湖浪子</div>
+					<div class="server-box">
+						<select></select>
+						<select></select>
+					</div>
+				</div>
+				<div class="side-btn btn-down"> 活动介绍 <i class="icon"></i> </div>
+				<div class="side-btn btn-up"> <i class="icon"></i> 返回顶部 </div>
 			</div>
 
 

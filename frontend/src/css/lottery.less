@@ -52,7 +52,6 @@
 }
 
 .lot-main{
-	position: relative;
 	width: 1020px;
 
 	.countdown-wrap {
@@ -69,35 +68,71 @@
 			text-shadow: 0px 1px 2px rgba(0, 0, 0, .61);
 		}
 		.second-title {
+			font-size: 0;
 			.timer-context {
 				font-size: 16px;
 				text-shadow: 0px 1px 2px rgba(0, 0, 0, .61);
+				vertical-align: middle;
 			}
 			.timmer {
-				// display: inline-block;
-				// width: 60px; height: 60px;
-				margin: 0 28px 0 16px;
-				text-align: center;
+				margin: 0 28px 0 26px;
 				vertical-align: middle;
 				font-family: "Arial";
 				font-size: 38.5px;
+				&.timmer-days {
+					margin-left: 15px;
+					margin-right: 25px;
+				}
 			}
 		}
 	}
 
 	.contain-wrap {
+		position: relative;
 		padding: 20px 17px 100px;
 		background: url('@{imgPath}/bg/bg_wrap_lotmain.jpg');
 
 		// 侧边栏
+		.side-server {
+			position: absolute;
+			right: -30px;
+			top: 0;
+			width: 30px; height: 155px;
+			background: green;
+		}
 		.side-btn {
 			position: absolute;
-			right: -20px;
-			background: red;
+			right: -45px;
+			padding: 10px 8px;
+			width: 14px;
+			height: 84px;
+			text-align: center;
 			cursor: pointer;
-			width: 20px;
+
+			border: 1px solid #496066;
+			background: rgba(255, 255, 255, .06);
+			// filter:alpha(opacity=6);
+			// opacity: 0.06;
+			// -moz-opacity:0.06;
+			color: #fff;
+
+			.icon {
+				width: 15px;
+				height: 15px;
+				background: url("@{imgPath}/bg/icons.png") no-repeat;
+			}
+
+			&.btn-up {
+				bottom: 100px;
+				.icon {
+					background-position: -59px -1px;
+				}
+			}
 			&.btn-down {
-				top: 20px;
+				top: 170px;
+				.icon {
+					background-position: -31px 0;
+				}
 			}
 		}
 	}
@@ -134,7 +169,7 @@
 
 		// background-box-top
 		.bg-bt {
-			background: url('@{imgPath}/bg/bg_lotbox_border.png') no-repeat;
+			background: url('@{imgPath}/bg/bg_lotbox_border.jpg') no-repeat center top;
 			padding: 16px 23px 10px;
 		}
 
@@ -145,9 +180,6 @@
 			height: 315px;
 		}
 		.collect-box{
-			.bg-bt {
-				background-position: 0 -75px;
-			}
 			.collect-table {
 				margin: 0 auto;
 				border-collapse: separate;
@@ -156,8 +188,8 @@
 				td {
 					width: 51px; height: 51px;
 					filter:alpha(opacity=40);
-					opacity: 0.5;
-					-moz-opacity:0.5;
+					opacity: 0.4;
+					-moz-opacity:0.4;
 					background-color:#fff;
 				}
 			}
