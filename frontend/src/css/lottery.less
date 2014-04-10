@@ -11,7 +11,7 @@
 .separate-line {
 	border-top: 1px solid #889b97;
 	border-bottom: 1px solid #d8dddc;
-	margin: 31px 0;
+	margin: 32px 0 33px;
 }
 
 .btn {
@@ -22,34 +22,39 @@
 	font-size: 13px;
 	color: #313c3e;
 	text-shadow: 0 1px 2px rgba(255, 255, 255, .25);
-	.btn-right {
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 10px;
-		height: 31px;
-		background: url('@{imgPath}/bg/icons.png') no-repeat -101px -23px;
-	}
+	background: url('@{imgPath}/bg/icons.png') no-repeat;
+	text-align: center;
 }
-.btn:hover {
+.btn:hover, .btn:active {
+	color: #313c3e;
 	text-decoration: none;
+	background-position-y: -66px;
 }
 .btn-back {
 	float: right;
-	margin-right: 20px;
-	margin-top: 15px;
-	padding: 0 15px;
+	background-position: -204px -24px;
+	width: 93px;
+	height: 31px;
+	margin: 10px 20px;
+	cursor: default;
+	&:hover, &.active {
+		background-position: -204px -24px;
+	}
 }
 .btn-power {
 	float: right;
-	padding: 0 10px;
+	background-position: -87px -24px;
+	width: 112px;
+	height: 31px;
 }
 .btn-server {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	padding: 0 15px;
-	margin-top: 20px;
+	background-position: 0 -24px;
+	width: 82px;
+	height: 31px;
+	margin: 10px 0;
 }
 /*==========================================*/
 .lottery-wrap {
@@ -69,9 +74,9 @@
 		text-align: right;
 		color: #fff;
 		.first-title {
-			padding:  110px 15px 10px;
+			padding:  120px 15px 7px;
 			font-size: 20.5px;
-			color: #f6dc9f;
+			color: #FFB000;
 			text-shadow: 0px 1px 2px rgba(0, 0, 0, .61);
 		}
 		.second-title {
@@ -103,15 +108,14 @@
 		.side-server {
 			position: absolute;
 			top: 0;
-			right: -172px;
-			width: 170px;
+			right: -31px;
+			width: 31px;
 			height: 160px;
-
-			border: 1px solid #729497;
 
 			.server-title {
 				float: left;
 				padding: 10px 8px;
+				border: 1px solid #729497;
 
 				width: 15px;
 				line-height: 14px;
@@ -124,34 +128,35 @@
 				font-family: 'Microsoft Yahei';
 				color: #fff;
 
+				filter:alpha(opacity=80);
+				opacity: 0.8;
+				-moz-opacity:0.8;
+
 				word-break: break-all;
 				writing-mode:tb-rl;
 			}
 			.server-box {
-				margin-left: 30px;
-				height: 140px;
+				position: absolute;
+				margin-left: 32px;
 				text-align: center;
 				background: rgba(255, 255, 255, .5);
-				padding-top: 20px;
+				padding: 20px 20px 15px;
+				border: 1px solid #729497;
+
 				select {
 					width: 112px;
 					height: 27px;
 					margin-top: 10px;
 					background: #ccc;
 				}
-				.select-icons {
+
+				.btn-close {
 					position: absolute;
-					width: 18px;
-					height: 18px;
-					background: url('@{imgPath}/bg/icons.png') no-repeat 0 -92px;
-				}
-				.pos-area {
-					top: 35px;
-					right: 18px;
-				}
-				.pos-server {
-					top: 72px;
-					right: 18px;
+					right: 5px;
+					top: px;
+					width: 15px;
+					height: 15px;
+					background: url("@{imgPath}/bg/icons.png") no-repeat -142px -3px;
 				}
 			}
 		}
@@ -166,9 +171,9 @@
 
 			border: 1px solid #496066;
 			background: rgba(255, 255, 255, .06);
-			// filter:alpha(opacity=6);
-			// opacity: 0.06;
-			// -moz-opacity:0.06;
+			filter:alpha(opacity=70);
+			opacity: 0.7;
+			-moz-opacity:0.7;
 			color: #fff;
 
 			.icon {
@@ -211,7 +216,7 @@
 
 		.box-title {
 			margin: 0;
-			padding: 9px 0;
+			padding: 6px 0 5px;
 			font-family: 'Microsoft Yahei';
 			font-size: 20px;
 			text-shadow: 0px 1px 2px rgba(0, 0, 0, .75);
@@ -232,7 +237,7 @@
 
 	.lot-bottom {
 		.lot-box {
-			height: 315px;
+			height: 362px;
 		}
 		.collect-box{
 			.collect-table {
@@ -291,14 +296,33 @@
 
 		.lot-power {
 			.log-power-content {
+				position: relative;
 				margin: 0 23px;
-				height: 78px;
-				padding-top: 30px;
+				// height: 78px;
+				// padding-top: 30px;
 				border-bottom: 1px solid #313c3e;
 			}
+			.power-now {
+				position: absolute;
+				top: -35px;
+				right: 0px;
+				// width: 154px;
+				height: 25px;
+				line-height: 25px;
+				// background: url('@{imgPath}/bg/icons.png') no-repeat -115px -110px;
+				padding-right: 10px;
+				background: #374849;
+				box-shadow:  0px 2px 0px rgba(45, 59, 60, .6) inset;
+				border-bottom: 1px solid rgba(255, 255, 255, .3);
+
+				// text-indent: 25px;
+				color: #87dbdd;
+				text-decoration: underline;
+
+			}
 			.progress-wrap {
-				margin: 0px 0 20px;
-				height: 15px;
+				// margin: 0px 0 20px;
+				// height: 15px;
 				background: red;
 			}
 		}
@@ -307,21 +331,29 @@
 			height: 117px;
 			.box-context {
 				padding: 0;
-				height: 53px;
+				height: 72px;
 				overflow: hidden;
 			}
 		}
 		.lot-luckynow {
 			height: 148px;
+
+			.lot-luckynow-list {
+				background: #374849;
+				padding: 8px 10px 0;
+				box-shadow:  0px 2px 0px rgba(45, 59, 60, .6) inset;
+				border-bottom: 1px solid rgba(255, 255, 255, .3);
+			}
 			.lot-luckynow-item {
 				float: left;
-				width: 170px;
-				margin-bottom: 10px;
+				width: 160px;
+				margin-bottom: 8px;
 				img {
 					width: 32px;
 					height: 32px;
 					vertical-align: middle;
 					margin-right: 8px;
+					background: #fff;
 				}
 			}
 		}

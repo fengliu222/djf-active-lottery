@@ -1,9 +1,9 @@
 'use strict'
 
 $(".js-btn-active").click ()->
-	$('body').animate({scrollTop:340}, 'slow');
+	$('body').animate({scrollTop:340}, 'slow')
 	return
 
 $('.js-btn-top').click ()->
-	$('body').animate({scrollTop:0}, 'slow');
+	$('body').animate({scrollTop:0}, 'slow')
 	return

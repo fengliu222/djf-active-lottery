@@ -83,10 +83,6 @@
 						  		pluginspage="http://www.macromedia.com/go/getflashplayer"
 						  		type="application/x-shockwave-flash"/>
 						</object>
-
-						<div id="startAnimation">
-							开始
-						</div>
 					</div>
 
 					<!-- 斗气值进阶，中奖名单等 -->
@@ -94,9 +90,18 @@
 						<div class="lot-power">
 							<h2 class="box-title bg-bt">斗气值进阶</h2>
 							<div class="log-power-content">
-								<div class="progress-wrap">
+								<div class="power-now">
+									<i class="icon-left"></i>当前斗气值：1900000000
 								</div>
-								<a class="btn btn-power" href="javascript:void(0)">获得更多斗气值<i class="btn-right"></i></a>
+								<div class="progress-wrap">
+									<div>累计消耗斗气值：1900</div>
+									<span class="level">LV 1</span>
+									<div class="progress-outter">
+										<span class="before">0</span><span class="after">5000</span>
+									</div>
+									<div class="progress-inner"><i class="btn-pro"></i></div>
+								</div>
+								<a class="btn btn-power" href="javascript:void(0)">获得更多斗气值</a>
 								<br class="clearfix"/>
 							</div>
 						</div>
@@ -128,8 +133,8 @@
 								<li class="lot-luckynow-item">
 									<img src="" /><span>服务器D</span>
 								</li>
+								<br class="clearfix"/>
 							</ul>
-							<br class="clearfix"/>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -154,7 +159,7 @@
 								<td></td><td></td><td></td><td></td>
 							</tr>
 						</table>
-						<a class="btn btn-back" href="javascript:void(0)">全部退回<i class="btn-right"></i></a>
+						<a class="btn btn-back" href="javascript:void(0)">全部退回</a>
 						<p class="context-info font-style-info">退回您中奖物品会按照一定比例返回点数</p>
 					</div>
 					<div class="lot-box right-box active-box">
@@ -196,9 +201,10 @@
 				<div class="side-server">
 					<div class="server-title">我的服务器:江湖浪子</div>
 					<div class="server-box">
-						<select><option>选择大区</option></select><i class="select-icons pos-area"></i>
-						<select><option>选择服务器</option></select><i class="select-icons pos-server"></i>
-						<a class="btn btn-server" href="javascript:void(0)">就这样了<i class="btn-right"></i></a>
+						<div class="btn-close js-close"></div>
+						<select><option>选择大区</option></select>
+						<select><option>选择服务器</option></select>
+						<a class="btn btn-server" href="javascript:void(0)">就这样了</a>
 					</div>
 				</div>
 				<div class="side-btn btn-down js-btn-active"> 活动介绍 <i class="icon"></i> </div>
