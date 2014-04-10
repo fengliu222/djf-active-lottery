@@ -164,12 +164,13 @@
 						<div class="lot-power">
 							<h2 class="box-title bg-bt">斗气值进阶</h2>
 							<div class="log-power-content">
-								<div class="power-now">
-									<i class="icon-left"></i>当前斗气值：1900000000
+								<div class="box-left-arrow">
+									<i class="box-icon"></i>
+									<div class="box-body">当前斗气值：<span clas="power-num">1900000000</span></div>
 								</div>
 								<div class="progress-wrap">
-									<div>累计消耗斗气值：1900</div>
-									<span class="level">LV 1</span>
+									<div class="box-custom">累计获得能量值：<span class="consume-num">1900</span></div>
+									<div class="level-box">LV 1</div>
 									<div class="progress-outter">
 										<span class="before">0</span><span class="after">5000</span>
 									</div>
@@ -219,22 +220,20 @@
 				<div class="lot-bottom">
 					<div class="lot-box left-box collect-box">
 						<h2 class="box-title bg-bt">退奖宝阁</h2>
-						<table class="collect-table">
-							<tr>
-								<td></td><td></td><td></td><td></td><td></td>
-								<td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
-								<td></td><td></td><td></td><td></td><td></td>
-								<td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
-								<td></td><td></td><td></td><td></td><td></td>
-								<td></td><td></td><td></td><td></td>
-							</tr>
-						</table>
+						<div class="box-left-arrow">
+							<i class="box-icon"></i>
+							<div class="box-body font-style-info">退回您中奖物品会按照一定比例返回点数</div>
+						</div>
+
+						<ul class="collect-list">
+							<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+							<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+							<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+							<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+							<div class="cover"></div>
+						</ul>
+
 						<a class="btn btn-back" href="javascript:void(0)">全部退回</a>
-						<p class="context-info font-style-info">退回您中奖物品会按照一定比例返回点数</p>
 					</div>
 					<div class="lot-box right-box active-box">
 						<h2 class="box-title bg-bt">活动介绍</h2>
