@@ -142,7 +142,6 @@
 
 					<!-- 抽奖Flash -->
 					<div class="lot-flash-wrap">
-
 						<object id="lotteryFlash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="615" height="680">
 						  <param name="quality" value="high" />
 						  <param name="wmode" value="transparent" />
@@ -158,8 +157,6 @@
 						  		pluginspage="http://www.macromedia.com/go/getflashplayer"
 						  		type="application/x-shockwave-flash"/>
 						</object>
-
-					 
 					</div>
 
 					<!-- 斗气值进阶，中奖名单等 -->
