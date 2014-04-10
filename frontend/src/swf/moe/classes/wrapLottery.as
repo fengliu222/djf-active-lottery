@@ -19,13 +19,14 @@ package moe.classes{
 	import moe.classes.util;
 	import moe.classes.ExBitmap;
 	import moe.classes.ImageLoader;
-	
+	import fl.motion.easing.*;
 	public class wrapLottery implements Turntable{
 		private var curGoods:String;
 		private var curObj:MovieClip;
 		public var afterCallback:Function;
 		public function wrapLottery(curObj:MovieClip):void{
 			this.curObj = curObj;
+
 		}
 		public function start(rotation:Number):void {
 			
@@ -48,12 +49,12 @@ package moe.classes{
 		}
 
 		public function updateData(type:Number,id:Number):void {
-			
+			//二期开发
 		}
 		
-		public function updateAllData(goods:Array):void {
-			 
-			for(var i:Number=0; i < goods.length; i++){
+		public function updateAllData(goods:Object):void {
+			var objLength:Number = util.objectLength(goods); 
+			for(var i:Number=0; i < objLength; i++){
 				
 				//文字属性
 				//var tf:TextFormat = new TextFormat();
@@ -64,17 +65,21 @@ package moe.classes{
 				//生成名字元件
 				//var goodsNameImg:Bitmap = ExBitmap.getTextBitmap(goods[i].name,tf);
 				//this.curObj["wrapGoods"+(i+1)].addChild(goodsNameImg);
-				
+				 
 				//生成ICON元件
 				var img =new Loader();
-				img.load(new URLRequest(goods[i].src));
-				img.y = 35;
-				this.curObj["wrapGoods"+(i+1)].addChild(img)
 				
+				img.load(new URLRequest(goods["wrapGoods"+(i+1)].src));
+				 
+				
+				this.curObj["outItem"+(i+1)]["wrapGoods"+(i+1)].getChildAt(0).visible = false;
+				this.curObj["outItem"+(i+1)]["wrapGoods"+(i+1)].addChild(img);
 				
 			}
 			 
 		}
+		
+		
 			
 	}
 }

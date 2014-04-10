@@ -32,9 +32,84 @@
 				},{
 					name: '哈哈哈8',
 					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: '哈哈哈1',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈2',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: 'asd',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈4',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈5',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈6',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: '哈哈哈7',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: '哈哈哈8',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: '哈哈哈1',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈2',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: 'asd',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈4',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈5',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				}, {
+					name: '哈哈哈6',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
 				}],
 				'inner': [{
 					name: 'goods1',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods2',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods3',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods4',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods5',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods6',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods1212',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods4234',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods121',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods234',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods123',
+					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
+				},{
+					name: 'goods441',
 					src: 'http://images.daoju.changyou.com/imgs/99/cd/ff80808141a1cb280141ab680a1600e9.png'
 				}]
 			};
@@ -67,16 +142,15 @@
 
 					<!-- 抽奖Flash -->
 					<div class="lot-flash-wrap">
-
-						<object id="lotteryFlash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="538" height="534">
+						<object id="lotteryFlash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="615" height="680">
 						  <param name="quality" value="high" />
 						  <param name="wmode" value="transparent" />
 						  <param name="allowScriptAccess" value="always" />
 						  <param name="movie" value="../swf/lottery.swf" />
 
 						  <embed src="../swf/lottery.swf"
-						  		width="538"
-						  		height="534"
+						  		width="615"
+						  		height="680"
 						  		name="lottery"
 						  		quality="high"
 						  		wmode="transparent"
@@ -238,6 +312,9 @@
 			// lottery.templateDataInit(defaultData.slice(0));
 		}
 
+		function checkStart(){
+			return true;
+		}
 		$("#startAnimation").bind("click",function(){
 			lottery.startAnimation();
 		})
