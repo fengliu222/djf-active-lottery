@@ -42,6 +42,6 @@ package moe.Interface{
 		 * 更新所有物品
 		 * @return [description]
 		 */
-		function updateAllData(goods:Array):void;
+		function updateAllData(goods:Object):void;
 	}
 }
