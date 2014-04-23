@@ -1,5 +1,6 @@
 
 module.exports = {
+
 	"get /hello": function (req, res) {
 		/**
 		 * Say hello page
@@ -9,12 +10,9 @@ module.exports = {
 			name: "world  "
 		});
 	},
-	"get /": function(req, res) {
-		/**
-		 * test override in freemarker
-		 */
-		this.render.ftl("index");
-	},
+	// "get /": function(req, res) {
+	// 	this.render.ftl("index");
+	// },
 	"get /getData":function(req, res){
 
 		if(req.query.type == 1){
@@ -28,7 +26,6 @@ module.exports = {
 				cur:"goods1212"
 			})
 		}
-		
 	},
 	"get /getAllData" : function(req, res){
 		this.render.json({

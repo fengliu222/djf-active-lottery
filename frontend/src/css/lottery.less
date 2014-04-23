@@ -144,6 +144,7 @@
 				border: 1px solid #729497;
 
 				width: 15px;
+				min-height: 140px;
 				line-height: 14px;
 
 				background-color: #4a5f61;
@@ -164,7 +165,10 @@
 			.server-box {
 				position: absolute;
 				margin-left: 32px;
+				*margin-left: 0;
 				text-align: center;
+				background: #fff;
+				filter:alpha(opacity=50);
 				background: rgba(255, 255, 255, .5);
 				padding: 20px 20px 15px;
 				border: 1px solid #729497;
@@ -204,6 +208,7 @@
 			color: #fff;
 
 			.icon {
+				display: block;
 				width: 15px;
 				height: 15px;
 				background: url("@{imgPath}/bg/icons.png") no-repeat;
@@ -212,7 +217,7 @@
 			&.btn-up {
 				bottom: 100px;
 				.icon {
-					background-position: -59px -1px;
+					background-position: -59px 0;
 				}
 			}
 			&.btn-down {
@@ -354,6 +359,7 @@
 
 		.lot-power {
 			.log-power-content {
+				// *display: block;
 				position: relative;
 				margin: 0 23px;
 				// height: 78px;
@@ -362,7 +368,7 @@
 			}
 			.box-left-arrow {
 				position: absolute;
-				top: -67px;
+				top: -41px;
 				right: 0px;
 
 				.box-body {
@@ -374,13 +380,17 @@
 				position: relative;
 				width: 342px;
 				height: 35px;
-				margin-top: 27px;
-				border-radius: 3px;
-				.gray-bg();
+				// margin-top: 27px;
+				padding-top: 25px;
+				// border-radius: 3px;
+				.progress-bg {
+					.gray-bg();
+					position: relative;
+				}
 
 				.box-custom {
 					position: absolute;
-					top: -35px;
+					top: -8px;
 					left: 0;
 					width: 142px;
 					height: 32px;
@@ -447,6 +457,8 @@
 			.lot-luckynow-list {
 				padding: 8px 10px 0;
 				.gray-bg();
+				// *display: block;
+				*height: 80px;
 			}
 			.lot-luckynow-item {
 				float: left;

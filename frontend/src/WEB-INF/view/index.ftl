@@ -170,14 +170,16 @@
 								</div>
 								<div class="progress-wrap">
 									<div class="box-custom">累计获得能量值：<span class="consume-num">1900</span></div>
-									<div class="level-box">LV 1</div>
-									<div class="progress-outter">
-										<span class="before">0</span><span class="after">5000</span>
+									<div class="progress-bg">
+										<div class="level-box">LV 1</div>
+										<div class="progress-outter">
+											<span class="before">0</span><span class="after">5000</span>
+										</div>
+										<div class="progress-inner"><i class="btn-pro"></i></div>
 									</div>
-									<div class="progress-inner"><i class="btn-pro"></i></div>
 								</div>
 								<a class="btn btn-power" href="javascript:void(0)">获得更多斗气值</a>
-								<br class="clearfix"/>
+								<div class="clearfix"></div>
 							</div>
 						</div>
 						<div class="lot-luckyguys">
@@ -208,7 +210,7 @@
 								<li class="lot-luckynow-item">
 									<img src="" /><span>服务器D</span>
 								</li>
-								<br class="clearfix"/>
+								<div class="clearfix"></div>
 							</ul>
 						</div>
 					</div>
@@ -272,7 +274,7 @@
 
 				<!-- 侧边导航 -->
 				<div class="side-server">
-					<div class="server-title">我的服务器:江湖浪子</div>
+					<div class="server-title">我的服务器 : 江湖浪子</div>
 					<div class="server-box">
 						<div class="btn-close js-close"></div>
 						<select><option>选择大区</option></select>
@@ -281,7 +283,7 @@
 					</div>
 				</div>
 				<div class="side-btn btn-down js-btn-active"> 活动介绍 <i class="icon"></i> </div>
-				<div class="side-btn btn-up js-btn-top"> <i class="icon"></i> 返回顶部 </div>
+				<div class="side-btn btn-up js-btn-top"> <i class="icon"></i>  返回顶部 </div>
 			</div>
 
 
