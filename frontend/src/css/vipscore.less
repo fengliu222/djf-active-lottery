@@ -2,8 +2,13 @@
 @imgPath: '@{basePath}/image';
 @import "./base/bundles/html5spec.mixin.less";
 
-.behavior (@url: "lib/pie/PIE_uncompressed.htc"){
+.behavior (@url: "lib/pie/PIE.htc"){
 	behavior: url(@url);
+}
+.display-inline (){
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
 }
 .g-clearfix {
 	.clearfix();
@@ -11,7 +16,94 @@
 .g-bd {
 	width: 1000px;
 }
+.g-outter { width: 100%; }
+.g-outter-1 { background: url('@{imgPath}/vip/bg_top.png') no-repeat center top; padding: 25px 0;}
+.g-outter-2 { background: #dce1e5; padding: 15px 0;}
 /*====================================*/
+.btn-red {
+	color: #fff;
+	text-shadow: 0 1px 0 #981007;
+	.gradient-v(#d32015, #870a02);
+	border-left: 1px solid #b4160c;
+	border-right: 1px solid #b4160c;
+	.box-shadow("0 -1px 0 #d80d00 inset, 1px 0 0 #d80d00 inset, -1px 0 0 #d80d00 inset");
+	border-top: 1px solid #e31d10;
+	border-bottom: 1px solid #861008;
+	text-decoration: none;
+	&:hover {
+		.gradient-v(#870a02, #d32015);
+		color: #fff;
+		text-decoration: none;
+	}
+	&:active {
+		.gradient-v(#870a02, #aa140a);
+		color: #fff;
+		text-decoration: none;
+	}
+}
+.btn-green {
+	color: #fff;
+	text-shadow: 0 1px 0 #2d4f49;
+	.gradient-v(#4fb4a9, #328b85);
+	.box-shadow("0 -1px 0 #5fcebc inset, 1px 0 0 #5fcebc inset, -1px 0 0 #5fcebc inset");
+	border-left: 1px solid #2c8a81;
+	border-right: 1px solid #2c8a81;
+	border-top: 1px solid #32958b;
+	border-bottom: 1px solid #21746f;
+	text-decoration: none;
+	&:hover {
+		.gradient-v(#328b85, #4fb4a9);
+		color: #fff;
+		text-decoration: none;
+	}
+	&:active {
+		.gradient-v(#40a097, #4fb4a9);
+		color: #fff;
+		text-decoration: none;
+	}
+}
+.btn-lightgray {
+	color: #585656;
+	text-shadow: 0 1px 0 #2d4f49;
+	.gradient-v(#fcfcfc, #dbd9d9);
+	.box-shadow("0 -1px 0 #fff inset, 1px 0 0 #fff inset, -1px 0 0 #fff inset");
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+	border-top: 1px solid #c8c8c8;
+	border-bottom: 1px solid #c8c8c8;
+	text-decoration: none;
+	&:hover {
+		.gradient-v(#dbd9d9, #fcfcfc);
+		color: #585656;
+		text-decoration: none;
+	}
+	&:active {
+		.gradient-v(#d3d2d2, #c8c8c8);
+		color: #585656;
+		text-decoration: none;
+	}
+}
+.btn-gray {
+	color: #fff;
+	text-shadow: 0 1px 0 #2d4f49;
+	.gradient-v(#b2b2b2, #646464);
+	.box-shadow("0 2px 0 #c1c1c1 inset, 1px 0 0 #c1c1c1 inset, -1px 0 0 #c1c1c1 inset");
+	border-left: 1px solid #a8a8a8;
+	border-right: 1px solid #a8a8a8;
+	border-top: 1px solid #a8a8a8;
+	border-bottom: 1px solid #a8a8a8;
+	text-decoration: none;
+	&:hover {
+		.gradient-v(#b2b2b2, #646464);
+		color: #fff;
+		text-decoration: none;
+	}
+	&:active {
+		.gradient-v(#b2b2b2, #646464);
+		color: #fff;
+		text-decoration: none;
+	}
+}
 .leftImg, info {
 	float: left;
 }
@@ -19,46 +111,293 @@
 .m-user, .m-rule, .card {
 	float: left;
 	width: 50%;
+	.box-sizing(border-box);
 	.clearfix();
 }
 
+body {
+	background: url('@{imgPath}/vip/bg_body.jpg');
+}
 /*====================================*/
+/* 顶部广告 */
+.m-ad {
+	padding: 5px 20px 35px;
+	img {
+		width: 960px;
+		height: 70px;
+	}
+}
+
 /* 用户中心 */
 .m-user {
-	.leftImg img {
-		width: 110px;
-		height: 110px;
+	height: 250px;
+	padding: 40px 50px;
+	.leftImg{
+		padding: 25px 0;
+		img {
+			display: block;
+			width: 110px;
+			height: 110px;
+		}
+		span {
+			display: block;
+			padding: 5px 0;
+			width: 100%;
+			text-align: center;
+			font-family: "Microsoft YaHei";
+			font-size: 15px;
+			font-weight: bold;
+			color: #970d04;
+		}
 	}
 	.info {
-		margin-left: 130px;
+		margin-top: 10px;
+		margin-left: 140px;
+		font-family: "Microsoft YaHei";
+		font-size: 12px;
+		font-weight: bold;
+		color: #7b532a;
+		line-height: 23px;
+		.score-num {
+			color: #970d04;
+		}
+	}
+	.g-progress {
+		height: 40px;
+	}
+
+	.un-user {
+		margin-left: 120px;
+		margin-top: 0;
+		font-weight: normal;
+		line-height: 30px;
+		.row-tip {
+			height: 22px;
+		}
+		.m-link1 {
+			color: #970d04;
+			font-size: 12px;
+			font-weight: normal;
+		}
+		.label {
+			.display-inline();
+			margin-right: 5px;
+			width: 55px;
+			text-align: right;
+			cursor: pointer;
+		}
+		input[type="text"], input[type="password"] {
+			width: 158px;
+			height: 24px;
+			background: #e1e1e1;
+			.box-shadow("0 1px 0 #bcbcbc inset, 0 1px 0 #f5f5f5, 1px 0 0 #bcbcbc inset");
+			padding-left: 5px;
+		}
+		.v-code {
+			width: 68px !important;
+			margin-right: 5px;
+		}
+		.btn-login {
+			padding: 3px 30px;
+			margin-top: 10px;
+			margin-left: 65px;
+		}
+	}
+}
+
+/* 商城规则 */
+.m-rule {
+	padding: 90px 60px 50px;
+	height: 250px;
+	font-size: 12px;
+	color: #621c13;
+	line-height: 25px;
+}
+
+/* 活动公告 */
+.m-notice {
+	margin: 20px 0;
+	width: 968px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	a {
+		color: #efe1cd;
 	}
 }
 
 /* 特价专区 */
 .m-area-sale {
+	h1 {
+		font-family: "Microsoft YaHei";
+		font-size: 26px;
+		color: #efe1cd;
+		margin: 15px 0;
+		text-shadow: 0 1px 1px #000;
+	}
 	.card {
+		padding: 15px;
+		background: rgba(0, 0, 0, .18);
+		.box-shadow("0 1px 1px rgba(0, 0, 0, .2) inset, 0 1px 1px rgba(255, 255, 255, .1)");
 		.leftImg img {
 			width: 190px;
 			height: 190px;
+			border: 5px solid #fff;
+			.box-shadow("1px 1px 1px rgba(140, 140, 140, .75), -1px -1px 1px rgba(140, 140, 140, .75)");
 		}
 		.info {
-			margin-left: 200px;
+			margin-left: 220px;
+			color: #efe1cd;
+			font-family: "Microsoft YaHei";
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 35px;
+		}
+		h4 {
+			font-size: 18px;
+			border-bottom: 1px solid #0f0d0c;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+			.box-shadow("0 1px 0 #403a36");
+		}
+		.tip {
+			font-weight: normal;
+			font-size: 12px;
+			color: #fff;
+		}
+		.source-price {
+			text-decoration:line-through;
+		}
+		.u-minus, .u-plus {
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			border: 1px solid #a3a3a3;
+			.gradient-v(#fff, #ccc);
+			.box-shadow("1px 1px 0 #fff inset, -1px -1px 0 #fff inset");
+			font-size: 18px;
+			color: #766654;
+			text-shadow: 0 1px 0 #fff;
+		}
+		.u-buy-number {
+			width: 45px;
+			height: 28px;
+			background: #171413;
+			.box-shadow("0 1px 0 rgba(0, 0, 0, .65) inset, 0 1px 0 rgba(255, 255, 255, .07)");
+			color: #fff;
+			padding-left: 8px;
+		}
+
+		.buy-state {
+			margin-top: 15px;
+		}
+		.btn-buy {
+			font-weight: normal;
+			padding: 3px 15px;
+		}
+	}
+	.timmer {
+		padding: 5px 0 0 15px;
+		font-size: 0;
+		.box-sizing(border-box);
+		background: url('@{imgPath}/vip/bg_timmer.png') no-repeat center 65px;
+		float: left;
+		width: 50%;
+		text-align: center;
+		.text {
+			font-size: 26px;
+			font-family: "Microsoft YaHei";
+			color: #1a1715;
+			text-shadow: 0 1px 0 rgba(255, 255, 255, .15);
+		}
+		span {
+			.display-inline();
+			margin: 20px 0px 35px;
+			width: 145px;
+			font-family: "Arial";
+			font-weight: bold;
+			font-size: 62px;
+			color: #7b532a;
+			text-shadow: 0 1px 0 #f3dab4;
 		}
 	}
 }
 
+.g-bd-2 {
+	h1 {
+		font-family: "Microsoft YaHei";
+		font-size: 26px;
+		color: #970d04;
+		margin-bottom: 10px;
+	}
+}
 /* 活动抢购 */
 .m-area-goods {
-	// width: 750px;
-	margin-right: 245px;
-	.clearfix();
+	margin-right: 240px;
 	.card {
-		.leftImg img {
-			width: 60px;
-			height: 60px;
+		margin: 0 10px 8px 0;
+		padding: 20px 0 20px 20px;
+		width: 368px;
+		height: 210px;
+		background: rgba(0, 0, 0, .15);
+		.box-shadow("0 1px 1px rgba(0, 0, 0, .1) inset, 0 1px 1px rgba(255, 255, 255, .3)");
+		.leftImg {
+			margin: 45px 0 0 5px;
+			img {
+				width: 60px;
+				height: 60px;
+				border: 3px solid #fff;
+			}
 		}
 		.info {
-			margin-left: 80px;
+			color: #970d04;
+			font-family: "Microsoft YaHei";
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 27px;
+			margin-left: 90px;
+		}
+		h4 {
+			font-size: 18px;
+			border-bottom: 1px solid #a5a6a7;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+			.box-shadow("0 1px 0 #d1d2d3");
+		}
+		.tip {
+			font-weight: normal;
+			font-size: 12px;
+			color: #766654;
+		}
+		.source-price {
+			text-decoration:line-through;
+		}
+		.u-minus, .u-plus {
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			border: 1px solid #aaaeb0;
+			.gradient-v(#fff, #ccc);
+			.box-shadow("1px 1px 0 #fff inset, -1px -1px 0 #fff inset");
+			font-size: 18px;
+			color: #766654;
+			text-shadow: 0 1px 0 #fff;
+		}
+		.u-buy-number {
+			width: 45px;
+			height: 28px;
+			background: #818283;
+			.box-shadow("0 1px 0 rgba(0, 0, 0, .15) inset, 0 1px 0 rgba(255, 255, 255, .5)");
+			color: #fff;
+			padding-left: 8px;
+		}
+
+		.buy-state {
+			margin-top: 15px;
+		}
+		.btn-buy {
+			font-weight: normal;
+			padding: 3px 15px;
 		}
 	}
 }
@@ -66,23 +405,67 @@
 /* 销量排行 */
 .m-area-sort {
 	float: right;
-	width: 240px;
+	width: 236px;
+	.m-list {
+		height: 427px;
+		background: rgba(0, 0, 0, .15);
+		.box-shadow("0 1px 1px rgba(0, 0, 0, .1) inset, 0 1px 1px rgba(255, 255, 255, .3)");
+	}
+	.icon-num {
+		float: left;
+		margin: 10px 20px 0px 5px;
+		width: 18px;
+		height: 19px;
+		line-height: 18px;
+		text-indent: 5px;
+		font-family: "Arial";
+		color: #fff;
+		.gradient-v(#d32015, #870a02);
+		.box-shadow("0 -1px 0 #d80d00 inset, 1px 0 0 #d80d00 inset, -1px 0 0 #d80d00 inset");
+		border-top: 1px solid #e31d10;
+		border-bottom: 1px solid #861008;
+		border-left: 1px solid #a6140b;
+		border-right: 1px solid #a6140b;
+	}
 	.leftImg img {
 		width: 40px;
 		height: 40px;
 	}
 	.info {
-		margin-left: 60px;
+		margin-left: 100px;
 	}
 	li {
-		.clearfix();;
+		.clearfix();
+		padding: 10px 20px 11px;
+		color: #666;
+		line-height: 20px;
+		&:nth-child(1), &:nth-child(2), &:nth-child(3) {
+			color: #970d04;
+		}
+		&:nth-child(2n) {
+			background: rgba( 0, 0, 0, .1);
+			.box-shadow("0 1px 1px rgba(0, 0, 0, .1) inset, 0 1px 1px rgba(255, 255, 255, .3)");
+		}
 	}
 }
 
 /* 特权活动 */
 .m-area-active {
+	padding-bottom: 40px;
+	font-size: 0;
+	h1 {
+		margin: 15px 0 10px;
+		font-family: "Microsoft YaHei";
+		font-size: 26px;
+		color: #fff;
+	}
 	li {
-		display: inline-block;
+		.display-inline();
+		margin-bottom: 10px;
+		margin-right: 10px;
+		&:nth-child(2n) {
+			margin-right: 0px;
+		}
 	}
 	img {
 		width: 494px;

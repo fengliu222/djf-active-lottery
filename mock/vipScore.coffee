@@ -7,6 +7,7 @@ dataIndex = {
         levelName: "神将"
         nextLevel: "天罡会员"
         score: "88888"
+        status: 1 # 0普通会员 1vip会员
     }
     recommendGoods: [
         {
@@ -93,6 +94,24 @@ dataIndex = {
             img: "image/tmp/good-1.png"
             num: 1660
         }
+        {
+            id: 5
+            name: "商品商品"
+            img: "image/tmp/good-1.png"
+            num: 1660
+        }
+        {
+            id: 6
+            name: "商品商品"
+            img: "image/tmp/good-1.png"
+            num: 1660
+        }
+        {
+            id: 7
+            name: "商品商品"
+            img: "image/tmp/good-1.png"
+            num: 1660
+        }
     ]
     activeAd: [
         {
@@ -115,7 +134,7 @@ dataIndex = {
 
     noticeList: [
         {
-            context: "最新公告：小剑同学，老实工作"
+            context: "最新公告：小剑同学，加油加油，好好工作哦！~"
             url: "http://active2"
         }
     ]
