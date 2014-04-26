@@ -1,10 +1,10 @@
 @basePath: 'http://localhost:3000';
 @imgPath: '@{basePath}/image';
 @import "./base/bundles/html5spec.mixin.less";
-
-.behavior (@url: "lib/pie/PIE.htc"){
+.behavior (@url: "../lib/pie/PIE.htc"){
 	behavior: url(@url);
 }
+
 .display-inline (){
 	display: inline-block;
 	*display: inline;
@@ -17,10 +17,26 @@
 	width: 1000px;
 }
 .g-outter { width: 100%; }
-.g-outter-1 { background: url('@{imgPath}/vip/bg_top.png') no-repeat center top; padding: 25px 0;}
+.g-outter-1 { background: url('@{imgPath}/vip/bg_top_wrap.jpg') no-repeat center top;}
 .g-outter-2 { background: #dce1e5; padding: 15px 0;}
+
+.g-bd-1{
+	background: url('@{imgPath}/vip/bg_top_inner.jpg') no-repeat center top;
+}
+.body-wrap{
+	transition:opacity .1s ease;
+	-webkit-transition:opacity .1s ease;
+}
+.f-vn{
+	opacity: 0;
+	filter:alpha(opacity=0);
+	visibility: hidden;
+
+}
+
 /*====================================*/
 .btn-red {
+	.behavior();
 	color: #fff;
 	text-shadow: 0 1px 0 #981007;
 	.gradient-v(#d32015, #870a02);
@@ -40,6 +56,7 @@
 		color: #fff;
 		text-decoration: none;
 	}
+
 }
 .btn-green {
 	color: #fff;
@@ -63,6 +80,7 @@
 	}
 }
 .btn-lightgray {
+	.behavior();
 	color: #585656;
 	text-shadow: 0 1px 0 #2d4f49;
 	.gradient-v(#fcfcfc, #dbd9d9);
@@ -121,7 +139,7 @@ body {
 /*====================================*/
 /* 顶部广告 */
 .m-ad {
-	padding: 5px 20px 35px;
+	padding: 30px 20px 35px;
 	img {
 		width: 960px;
 		height: 70px;
@@ -228,6 +246,7 @@ body {
 
 /* 特价专区 */
 .m-area-sale {
+	margin-bottom: 26px;
 	h1 {
 		font-family: "Microsoft YaHei";
 		font-size: 26px;
@@ -278,14 +297,17 @@ body {
 			font-size: 18px;
 			color: #766654;
 			text-shadow: 0 1px 0 #fff;
+
 		}
 		.u-buy-number {
 			width: 45px;
 			height: 28px;
+			line-height: 28px;	
 			background: #171413;
 			.box-shadow("0 1px 0 rgba(0, 0, 0, .65) inset, 0 1px 0 rgba(255, 255, 255, .07)");
 			color: #fff;
 			padding-left: 8px;
+			vertical-align: middle;
 		}
 
 		.buy-state {
@@ -382,6 +404,7 @@ body {
 			font-size: 18px;
 			color: #766654;
 			text-shadow: 0 1px 0 #fff;
+			vertical-align: middle;
 		}
 		.u-buy-number {
 			width: 45px;
@@ -390,6 +413,7 @@ body {
 			.box-shadow("0 1px 0 rgba(0, 0, 0, .15) inset, 0 1px 0 rgba(255, 255, 255, .5)");
 			color: #fff;
 			padding-left: 8px;
+			line-height: 28px;
 		}
 
 		.buy-state {
@@ -404,9 +428,11 @@ body {
 
 /* 销量排行 */
 .m-area-sort {
+
 	float: right;
 	width: 236px;
 	.m-list {
+
 		height: 427px;
 		background: rgba(0, 0, 0, .15);
 		.box-shadow("0 1px 1px rgba(0, 0, 0, .1) inset, 0 1px 1px rgba(255, 255, 255, .3)");
@@ -443,6 +469,7 @@ body {
 			color: #970d04;
 		}
 		&:nth-child(2n) {
+			.behavior();
 			background: rgba( 0, 0, 0, .1);
 			.box-shadow("0 1px 1px rgba(0, 0, 0, .1) inset, 0 1px 1px rgba(255, 255, 255, .3)");
 		}
@@ -460,6 +487,8 @@ body {
 		color: #fff;
 	}
 	li {
+		width: 494px;
+		height: 200px;
 		.display-inline();
 		margin-bottom: 10px;
 		margin-right: 10px;

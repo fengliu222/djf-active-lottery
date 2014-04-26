@@ -141,5 +141,8 @@ dataIndex = {
 }
 module.exports = {
     "get /": (req, res) ->
-        this.render.ftl "dbActive", dataIndex
+        this.render.ftl "dbActive"
+        
+    "get /init": (req, res) ->
+        this.render.json dataIndex
 }
